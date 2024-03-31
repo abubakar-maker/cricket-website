@@ -1,12 +1,7 @@
 *{
  margin: 0;
- background-image: url(img/babar-azam-batting-form-cmdbrbm0kze7rb5m.jpg);
-    background-size: cover; /* Ensures the background image covers the entire viewport */
-    background-position: center; /* Centers the background image */
-    background-attachment: fixed; 
-    background-attachment: fixed;
+ 
     font-weight: bold;
-  color: rgb(255, 255, 255);
     background-color: none;
 
 }
