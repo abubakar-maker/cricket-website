@@ -34,4 +34,9 @@ page5.addEventListener('click',()=>{
   grade1Bats .addEventListener('click',()=>{
    window.location = 'grade.html'
   })
+  const grade2Bats = document.getElementById('grade2');
+  grade2Bats .addEventListener('click',()=>{
+   window.location = 'grade2.html'
+  })
+
 
