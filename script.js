@@ -1,26 +1,4 @@
- alert("leave a comment")
- 
- document.addEventListener("DOMContentLoaded", function() {
-  // Create the navigation bar HTML
-  var navBarHTML = `
-      <nav>
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </nav>
-  `;
-  
-  // Find the location where you want to insert the navigation bar
-  var navBarLocation = document.getElementById("nav-bar");
-  
-  // Insert the navigation bar HTML into the designated location
-  if (navBarLocation) {
-      navBarLocation.innerHTML = product.html;
-  }
-});
+
 
 
  const logo = document.getElementById('logo');
@@ -48,7 +26,7 @@ const page5 = document.getElementById('bat-img5');
 page5.addEventListener('click',()=>{
  window.location = 'page6.html'
 })
-const allProducts = document.getElementById('products');
-allProducts.addEventListener('click',()=>{
- window.location = 'produts.html'
-})
+ const allProducts = document.getElementById('products');
+  allProducts.addEventListener('click',()=>{
+   window.location = 'produts.html'
+  })
