@@ -30,3 +30,8 @@ page5.addEventListener('click',()=>{
   allProducts.addEventListener('click',()=>{
    window.location = 'produts.html'
   })
+  const grade1Bats = document.getElementById('Grade');
+  grade1Bats .addEventListener('click',()=>{
+   window.location = 'grade.html'
+  })
+
