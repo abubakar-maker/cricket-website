@@ -1,9 +1,9 @@
 // Function to initialize Google Sign-In
 function initGoogleSignIn() {
     gapi.load('auth2', function() {
-        auth2 = gapi.auth2.init({
-            client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
-            cookiepolicy: 'single_host_origin'
+        auth2 = gapi.auth2.init({        
+    client_id: 'randomclientid',
+            cookiepolicy: 'https://www.googleapis.com/auth/plus.login'
         });
         attachSignin(document.getElementById('google-login-btn'));
     });
