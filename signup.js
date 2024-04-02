@@ -30,6 +30,3 @@ function attachSignin(element) {
     e.async = true;
     document.getElementById('google-login-btn').appendChild(e);
 })();
-if(profile==true){
-    alert("you are logged in")
-}
