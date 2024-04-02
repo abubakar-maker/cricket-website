@@ -30,3 +30,17 @@ function attachSignin(element) {
     e.async = true;
     document.getElementById('google-login-btn').appendChild(e);
 })();
+
+
+const loggin = document.getElementById('login');
+loggin.addEventListener('click',()=>{
+        window.location = 'index.html'
+        alert("you are logged into the website");
+ })
+ const sing = document.getElementById('sign');
+sign .addEventListener('click',()=>{
+        window.location = 'index.html'
+        alert("you are singged into the website");
+       
+ })
+

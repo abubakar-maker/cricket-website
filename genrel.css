@@ -30,7 +30,10 @@ nav a:hover {
 nav li{
   color: rgb(255, 255, 255);
 }
-
+#logo{
+  background-color:goldenrod;
+  color: blue;
+}
 #logo,#sign-up{
   display: flex;
   height:58px;
@@ -86,6 +89,7 @@ transition: 0.5s;
   
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 .p{
   font-size: 21px;
   font-weight: bold;
