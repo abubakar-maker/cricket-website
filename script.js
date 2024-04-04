@@ -42,6 +42,11 @@ page5.addEventListener('click',()=>{
  bats .addEventListener('click',()=>{
    window.location = 'mb-malik.html'
   })
+  
+  const Willowbats = document.getElementById('Willow-bats');
+  Willowbats .addEventListener('click',()=>{
+   window.location = 'willow.html'
+  })
 
   
   const sign = document.getElementById('sign-up');
