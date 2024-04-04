@@ -38,6 +38,12 @@ page5.addEventListener('click',()=>{
   grade2Bats .addEventListener('click',()=>{
    window.location = 'grade2.html'
   })
+  const bats = document.getElementById('mb-malik');
+ bats .addEventListener('click',()=>{
+   window.location = 'mb-malik.html'
+  })
+
+  
   const sign = document.getElementById('sign-up');
  sign .addEventListener('click',()=>{
    window.location = 'signup.html'
