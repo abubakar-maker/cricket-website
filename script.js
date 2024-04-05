@@ -56,12 +56,8 @@ page5.addEventListener('click',()=>{
   kits .addEventListener('click',()=>{
    window.location = 'produts.html'
   })
-
-  
   const sign = document.getElementById('sign-up');
- sign .addEventListener('click',()=>{
-   window.location = 'signup.html'
-  })
+  sign .addEventListener('click',()=>{
+    window.location = 'signup.html'
+   })
   
-
-

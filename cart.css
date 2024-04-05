@@ -1,0 +1,17 @@
+body{
+ 
+    background-color: #010718; 
+}
+
+
+
+ .thing{
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+ }
+ .your h2{
+    color: whitesmoke;
+ }
