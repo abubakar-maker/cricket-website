@@ -47,6 +47,15 @@ page5.addEventListener('click',()=>{
   Willowbats .addEventListener('click',()=>{
    window.location = 'willow.html'
   })
+  const kashmirbats = document.getElementById('kashmir');
+  kashmirbats .addEventListener('click',()=>{
+   window.location = 'willow.html'
+  })
+
+  const kits = document.getElementById('kits');
+  kits .addEventListener('click',()=>{
+   window.location = 'produts.html'
+  })
 
   
   const sign = document.getElementById('sign-up');

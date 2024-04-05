@@ -43,4 +43,11 @@ sign .addEventListener('click',()=>{
         alert("you are singged into the website");
        
  })
+//  let username = document.getElementById('username')
+//  let password = document.getElementById('password')
 
+//  if (username && password == username && password){
+//     alert("you are singged into the website");
+//  } else if( username && password == true ){
+//     alert("check you password or gmail")
+//  }
