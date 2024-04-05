@@ -62,5 +62,6 @@ page5.addEventListener('click',()=>{
  sign .addEventListener('click',()=>{
    window.location = 'signup.html'
   })
+  
 
 
