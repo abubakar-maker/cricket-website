@@ -4,6 +4,8 @@
   font-weight: bold;
   background-color: none;
 
+
+
 }
 body::before{
   background-image:url(" https://media.istockphoto.com/id/642535304/photo/the-game-moment.jpg?s=1024x1024&w=is&k=20&c=PKe9XerxZw0KFPEAEbXIi4g2d3xcz3wjetHEMnJlqcM=");
@@ -110,6 +112,7 @@ nav li {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
+  grid-template-columns: 1fr 60px;
   -ms-flex-item-align: center;
   align-items: center;
   justify-content: space-between;
