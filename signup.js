@@ -67,20 +67,21 @@ function attachSignin(element) {
 });
 
 // Login form
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('loginForm').addEventListener('sumbit', function(event) {
     event.preventDefault(); // Prevent the form from submitting
-    var username = document.getElementById('login-username').value.trim();
-    var password = document.getElementById('login-password').value.trim();
-    var storedUsername = localStorage.getItem('username');
-    var storedPassword = localStorage.getItem('password');
+   let username = document.getElementById('login-username').value.trim();
+    let password = document.getElementById('login-password').value.trim();
+    let storedUsername = localStorage.getItem('username');
+    let storedPassword = localStorage.getItem('password');
     if (username === storedUsername && password === storedPassword) {
         alert('Logged in successfully');
         // Redirect to dashboard or home page
         window.location.href = 'index.html';
     } else {
-        alert('Invalid username or password.');
+      alert('Invalid username or password.');
     }
 });
+
 
 // Logout button
 
@@ -107,5 +108,6 @@ document.addEventListener("DOMContentLoaded", function() {
         profileImage.src = 'sign-up-icon-signup-square-box-on-transparent-background-free-png.webp';
     }
 });
+
 
 
