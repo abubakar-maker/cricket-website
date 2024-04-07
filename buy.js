@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('myForm').addEventListener('click', function(event) {
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('myForm').addEventListener('click', function (event) {
         event.preventDefault(); // Prevent the form from submitting
 
         // Get form values
@@ -26,6 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
             // If any field is empty, show an alert
             alert('Please fill in all fields.');
         }
-        
+
     });
 });

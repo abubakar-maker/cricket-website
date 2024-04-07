@@ -1,17 +1,18 @@
-body{
- 
-    background-color: #010718; 
+body {
+
+   background-color: #010718;
 }
 
 
 
- .thing{
-    color: white; 
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+.thing {
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
- }
- .your h2{
-    color: whitesmoke;
- }
+}
+
+.your h2 {
+   color: whitesmoke;
+}

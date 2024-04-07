@@ -1,13 +1,29 @@
-*{
- margin: 0;
- 
-    font-weight: bold;
-    background-color: none;
+* {
+  margin: 0;
+
+  font-weight: bold;
+  background-color: none;
 
 }
+body::before{
+  background-image:url(" https://media.istockphoto.com/id/642535304/photo/the-game-moment.jpg?s=1024x1024&w=is&k=20&c=PKe9XerxZw0KFPEAEbXIi4g2d3xcz3wjetHEMnJlqcM=");
+  content: "";
+  position: absolute;
+  top:0;
+ left: 0;
+  right: 0; 
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  opacity: 0.5;
+  
+
+}
+
 nav {
   overflow: hidden;
-  
+
 }
 
 nav a {
@@ -19,7 +35,7 @@ nav a {
   text-decoration: none;
   font-size: 13px;
   color: black;
- cursor: pointer;
+  cursor: pointer;
 }
 
 nav a:hover {
@@ -27,36 +43,45 @@ nav a:hover {
   text-decoration: underline purple;
   transition: 0.5s;
 }
-nav li{
+
+nav li {
   color: rgb(255, 255, 255);
 }
-#logo{
-  background-color:goldenrod;
+
+#logo {
+  background-color: goldenrod;
   color: blue;
 }
-#logo,#sign-up{
+
+#logo,
+#sign-up {
   display: flex;
-  height:58px;
-  width:90px;
+  height: 58px;
+  width: 90px;
   margin-left: 1px;
   margin-top: 1px;
   cursor: pointer;
 
 }
-#sign-up{
+
+#sign-up {
   margin-left: 1000px;
-  
+
 }
-.logo:hover,#sign-up{
+
+.logo:hover,
+#sign-up {
   border-radius: 10px;
   transition: 0.4s;
 }
-.search-container{
+
+.search-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.search-bar{
+
+.search-bar {
   width: 220px;
   height: 40px;
   padding-left: 7px;
@@ -65,11 +90,13 @@ nav li{
   border-color: aliceblue;
   cursor: pointer;
 }
-.search-bar:hover{
- border-radius: 0px;
-transition: 0.5s;
+
+.search-bar:hover {
+  border-radius: 0px;
+  transition: 0.5s;
 }
-.magnifying-glass-solid{
+
+.magnifying-glass-solid {
   width: 25px;
   height: 30px;
   cursor: pointer;
@@ -78,9 +105,9 @@ transition: 0.5s;
 
 }
 
-.container-img{
+.container-img {
   display: inline-flex;
-  flex-direction:row;
+  flex-direction: row;
   flex-wrap: wrap;
   -ms-flex-item-align: center;
   align-items: center;
@@ -88,11 +115,13 @@ transition: 0.5s;
   position: relative;
   border: 3px 3px solid black;
   cursor: pointer;
-  
+
 
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-.p{
+
+.p {
   font-size: 21px;
   font-weight: bold;
   position: absolute;
@@ -101,38 +130,50 @@ transition: 0.5s;
   margin-top: 20px;
 }
 
-#bat-img,#bat-img5,#bat-img2,#bat-img4,#bat-img3{
+#bat-img,
+#bat-img5,
+#bat-img2,
+#bat-img4,
+#bat-img3 {
   height: 190px;
-  width:180px ;
+  width: 180px;
   margin: 90px;
   border: 2px 3px solid black;
   background-color: black;
 }
-#bat-img:hover,#bat-img5:hover,#bat-img2:hover,#bat-img4:hover,#bat-img3:hover{
+
+#bat-img:hover,
+#bat-img5:hover,
+#bat-img2:hover,
+#bat-img4:hover,
+#bat-img3:hover {
   opacity: 0.8;
   transition: 0.5s;
   color: brown;
-  
+
 }
-.bat-img:hover{
+
+.bat-img:hover {
   border-radius: 7px;
   transition-duration: 0.4s;
 }
 
-.bat-price{
+.bat-price {
   position: absolute;
   bottom: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
- left: 45px;
-}
-.about{
-margin-top: 10px;
-background-color: grey;
+  left: 45px;
 }
 
-.about p,.about h2{
-  color:white;
+.about {
+  margin-top: 10px;
+  background-color: grey;
+}
+
+.about p,
+.about h2 {
+  color: white;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -140,7 +181,9 @@ background-color: grey;
   margin-bottom: 10px;
 
 }
-.about p:hover,.about h2:hover{
+
+.about p:hover,
+.about h2:hover {
   color: blueviolet;
   text-decoration: underline purple;
   transition: 0.5s;

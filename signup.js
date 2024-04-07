@@ -1,8 +1,8 @@
 // Function to initialize Google Sign-In
 function initGoogleSignIn() {
-    gapi.load('auth2', function() {
-        auth2 = gapi.auth2.init({        
-    client_id: 'randomclientid',
+    gapi.load('auth2', function () {
+        auth2 = gapi.auth2.init({
+            client_id: 'randomclientid',
             cookiepolicy: 'https://www.googleapis.com/auth/plus.login'
         });
         attachSignin(document.getElementById('google-login-btn'));
@@ -13,24 +13,24 @@ let idToken
 // Function to attach Google Sign-In to button
 function attachSignin(element) {
     auth2.attachClickHandler(element, {},
-        function(googleUser) {
+        function (googleUser) {
             console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-          profile = googleUser.getBasicProfile();
+            profile = googleUser.getBasicProfile();
             idToken = googleUser.getAuthResponse().id_token;
         },
-        function(resolve) {
+        function (resolve) {
             console.resolve('resolve: ' + resolve);
         });
 }
 
 // Load Google Platform Library
-(function() {
+(function () {
     var e = document.createElement('script');
     e.src = 'https://apis.google.com/js/platform.js?onload=initGoogleSignIn';
     e.async = true;
     document.getElementById('google-login-btn').appendChild(e);
 })();
- 
+
 
 // const loggin = document.getElementById('login');
 // loggin.addEventListener('click',()=>{
@@ -41,12 +41,12 @@ function attachSignin(element) {
 // sign .addEventListener('click',()=>{
 //         window.location = 'index.html'
 //         alert("you are singged into the website");
-       
+
 //  })
 
 
-  // Signup form
-  document.getElementById('signupForm').addEventListener('submit', function(event) {
+// Signup form
+document.getElementById('signupForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the form from submitting
     var username = document.getElementById('signup-username').value.trim();
     var password = document.getElementById('signup-password').value.trim();
@@ -57,7 +57,7 @@ function attachSignin(element) {
             localStorage.setItem('username', username);
             localStorage.setItem('password', password);
             alert('Signup successful');
-            window.location='index.html';
+            window.location = 'index.html';
         } else {
             alert('Please enter a valid Gmail address.');
         }
@@ -67,9 +67,9 @@ function attachSignin(element) {
 });
 
 // Login form
-document.getElementById('loginForm').addEventListener('sumbit', function(event) {
+document.getElementById('loginForm').addEventListener('sumbit', function (event) {
     event.preventDefault(); // Prevent the form from submitting
-   let username = document.getElementById('login-username').value.trim();
+    let username = document.getElementById('login-username').value.trim();
     let password = document.getElementById('login-password').value.trim();
     let storedUsername = localStorage.getItem('username');
     let storedPassword = localStorage.getItem('password');
@@ -78,14 +78,14 @@ document.getElementById('loginForm').addEventListener('sumbit', function(event) 
         // Redirect to dashboard or home page
         window.location.href = 'index.html';
     } else {
-      alert('Invalid username or password.');
+        alert('Invalid username or password.');
     }
 });
 
 
 // Logout button
 
-document.getElementById('logout-btn').addEventListener('click', function(event) {
+document.getElementById('logout-btn').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the form from submitting
     localStorage.removeItem('username');
     localStorage.removeItem('password');
@@ -93,7 +93,7 @@ document.getElementById('logout-btn').addEventListener('click', function(event) 
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Check if user is signed in (You can define your own logic here)
     let isSignedIn = localStorage.getItem('username') !== null;
 
