@@ -91,15 +91,21 @@ document.getElementById('logout-btn').addEventListener('click', function(event) 
     window.location.href = 'index.html';
 });
 
-function simulateLogin() {
-    // Check if user is signed in (you may use localStorage or session storage for this check)
-    var isSignedIn = true; // For demonstration purpose, assuming the user is signed in
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if user is signed in (You can define your own logic here)
+    let isSignedIn = localStorage.getItem('username') !== null;
+
+    // Get the image element
+    var profileImage = document.getElementById('signInImage');
 
     if (isSignedIn) {
-        // Get user's photo URL from somewhere (e.g., localStorage or an API)
-        var userPhotoURL = localStorage.getItem('userPhotoURL'); // Assuming you stored the user's photo URL upon successful login
-
-        // Update the src attribute of the sign-in image
-        document.getElementById('signInImage').src = 'all products images/user-solid.svg';
+        // If user is signed in, change the image source to the user photo
+        profileImage.src = 'all products images/user-solid.svg';
+    } else {
+        // If user is not signed in, keep the default image or change it to a sign-in image
+        profileImage.src = 'sign-up-icon-signup-square-box-on-transparent-background-free-png.webp';
     }
-}
+});
+
+
