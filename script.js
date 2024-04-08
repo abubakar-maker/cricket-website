@@ -70,8 +70,8 @@ page5.addEventListener('click',()=>{
     if (isSignedIn) {
         // If user is signed in, change the image source to the user photo
         profileImage.src = "all products images/IMG-20240312-WA0072.jpg";
-        profileImage.style.height="10%";
-        profileImage.style.width="8%";
+        profileImage.style.height="7%";
+        profileImage.style.width="6%";
         profileImage.style.borderRadius="26%";
 
     } else {
