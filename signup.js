@@ -98,14 +98,14 @@ document.addEventListener("DOMContentLoaded", function () {
     let isSignedIn = localStorage.getItem('username') !== null;
 
     // Get the image element
-    var profileImage = document.getElementById('signInImage');
+    var profileImage = document.getElementById('sign-up');
 
     if (isSignedIn) {
         // If user is signed in, change the image source to the user photo
-        profileImage.src = 'all products images/user-solid.svg';
+        profileImage.src = 'https://yt3.ggpht.com/ytc/AIdro_kNaumymcxYzV7_n7_VRbQ2TRlIbU2w5csOMN0cH8jiED8=s240-c-k-c0x00ffffff-no-rj';
     } else {
         // If user is not signed in, keep the default image or change it to a sign-in image
-        profileImage.src = 'sign-up-icon-signup-square-box-on-transparent-background-free-png.webp';
+        profileImage.src = 'https://yt3.ggpht.com/ytc/AIdro_kNaumymcxYzV7_n7_VRbQ2TRlIbU2w5csOMN0cH8jiED8=s240-c-k-c0x00ffffff-no-rj';
     }
 });
 

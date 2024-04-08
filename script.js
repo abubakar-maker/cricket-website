@@ -60,3 +60,22 @@ page5.addEventListener('click',()=>{
   sign .addEventListener('click',()=>{
     window.location = 'signup.html'
    })
+   document.addEventListener("DOMContentLoaded", function () {
+    // Check if user is signed in (You can define your own logic here)
+    let isSignedIn = localStorage.getItem('username') !== null;
+
+    // Get the image element
+    var profileImage = document.getElementById('sign-up');
+
+    if (isSignedIn) {
+        // If user is signed in, change the image source to the user photo
+        profileImage.src = "all products images/IMG-20240312-WA0072.jpg";
+        profileImage.style.height="10%";
+        profileImage.style.width="8%";
+        profileImage.style.borderRadius="26%";
+
+    } else {
+        // If user is not signed in, keep the default image or change it to a sign-in image
+        profileImage.src = 'sign-up-icon-signup-square-box-on-transparent-background-free-png.webp'
+    }
+});
