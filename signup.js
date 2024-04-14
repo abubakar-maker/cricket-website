@@ -28,7 +28,7 @@ function attachSignin(element) {
     var e = document.createElement('script');
     e.src = 'https://apis.google.com/js/platform.js?onload=initGoogleSignIn';
     e.async = true;
-    document.getElementById('google-login-btn').appendChild(e);
+    document.getElementById('google-login-btn');
 })();
 
 
