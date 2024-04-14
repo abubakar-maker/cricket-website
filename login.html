@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="genrel.css">
+</head>
+<body>
+    <a href="index.html">
+        <img id="logo" src="img/images-removebg-preview.png" alt="">
+    </a>
+    <!-- Login Form -->
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="login-username">Username (email)</label>
+                <input type="text" id="login-username" name="login-username" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" required>
+                <div class="text"></div>
+            </div>
+
+            <input type="submit" value="Login">
+        </form> 
+        <div class="container" id="userImageContainer" style="display:none;">
+            <h2>Welcome User</h2>
+            <img id="signInImage" src="all products images/user-solid.svg" alt="">
+        </div> 
+
+
+
+        <div class="btn-container">
+            <h2>Logout</h2>
+            <button id="logout-btn">Logout</button>
+        </div> 
+</body>
+</div>
+    <script src="signup.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

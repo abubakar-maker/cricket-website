@@ -1,23 +1,38 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Patua One", serif ;
 }
  #logo{
-    display: flex;
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
     width: 80px;
     height: 40px;
-    justify-self: center;
-    align-items: center;
 } 
+.sign-container{
+    position: absolute;
+    display: block;
+ bottom: 13pc;
+ right:5pc;
+    
+}
+
 .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
+.container h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    
+
+}
 
 button {
     margin-top: 10px;
-    background-color: #4285F4;
+    background-color: #865ba4;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -26,7 +41,7 @@ button {
 }
 
 button:hover {
-    background-color: #3c78d8;
+    background-color: #865bf7;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -64,10 +79,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-.container-btn{
+.btn-container{
     position: absolute;
-    bottom: 10px;
-     right: 550px;
+    bottom: 13pc;
+     right: 12pc;
     
 }
 #logout-btn{
@@ -86,4 +101,10 @@ input[type="submit"]:hover {
     background-color: #3c78d8;
     border-radius: 10px;
     transition: 0.5s;
+}
+.login-p{
+    margin-top: 4px;
+}
+.login-p a{
+    color: #0000FF;
 }

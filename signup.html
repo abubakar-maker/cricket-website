@@ -4,22 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Sign Up Page</title>
+    <title>SignUp Page</title>
     <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="genrel.css">
+  
 </head>
 
 <body>
-    <a href="http://127.0.0.1:5500/index.html#">
+    <a href="index.html">
         <img id="logo" src="img/images-removebg-preview.png" alt="">
     </a>
-    <br>
 
-
-    <div class="container">
-        <h2>Login/Signup Page</h2>
-        <button id="google-login-btn">Sign in with Google</button>
-    </div>
+        <div class="sign-container">
+    <button id="google-login-btn">Sign in with Google</button>
+            </div>
 
 
     <!-- Signup Form -->
@@ -34,42 +32,18 @@
                 <label for="signup-password">Password</label>
                 <input type="password" id="signup-password" name="signup-password" required>
             </div>
-            <input type="submit" value="Signup">
+            <input  type="submit" value="Signup">
+            <div class="login-p">
+            <p>Have an account?</p>
+            <a href="login.html">login</a>
+        </div>
         </form>
+       
     </div>
 
-    <!-- Login Form -->
-    <div class="container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="login-username">Username (email)</label>
-                <input type="text" id="login-username" name="login-username" required>
-            </div>
-            <div class="form-group">
-                <label for="login-password">Password</label>
-                <input type="password" id="login-password" name="login-password" required>
-                <div class="text"></div>
-            </div>
 
-            <input type="submit" value="Login">
-        </form>
-        <!-- User Image -->
-        <div class="container" id="userImageContainer" style="display:none;">
-            <h2>Welcome User</h2>
-            <img id="signInImage" src="all products images/user-solid.svg" alt="">
-        </div>
 
-        <!-- logout btn -->
-
-        <div class="container-btn">
-            <h2>Logout</h2>
-            <button id="logout-btn">Logout</button>
-        </div>
-</body>
-</div>
-
-<script src="signup.js"></script>
+ <script src="signup.js"></script> 
 </body>
 
 </html>
