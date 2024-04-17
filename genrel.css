@@ -13,12 +13,17 @@
 
 nav {
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: inline;
+  margin-left: 3pc;
+  z-index: 999;
 
 }
 
 nav a {
   float: left;
-  display: block;
+  display: inline;
   color: hite;
   text-align: center;
   padding: 14px 20px;
@@ -28,41 +33,56 @@ nav a {
   cursor: pointer;
 }
 
-nav a:hover {
-  color: black;
-  text-decoration: underline purple;
-  transition: 0.5s;
+nav a {
+  color: rgb(185, 170, 32);
 }
 
-nav li {
-  color: rgb(255, 255, 255);
+
+nav a:hover {
+  color:#fff;
+  text-decoration: underline !important ;
+  transition: 0.5s;
+  background-color: #8cac5e;
 }
+
 
 #logo {
   background-color: goldenrod;
   color: blue;
 }
 
-#logo,
-#sign-up {
+#logo
+  { 
   display: flex;
   height: 58px;
   width: 90px;
   margin-left: 1px;
-  margin-top: 1px;
+  margin-top: 49px;
+max-width: fit-content;
   cursor: pointer;
+
 
 }
 
 #sign-up {
   margin-left: 1000px;
+border-color:#5adbb5;
+color: #5adbb5;
+font-style: italic;
+font-size: 19px;
+background-color: #fff;
+top: 10px; 
+right: 20px;transition: top 0.3s ease;
 
 }
 
 .logo:hover,
-#sign-up {
+#sign-up:hover  {
   border-radius: 10px;
   transition: 0.4s;
+  background-color: #5adbb5;
+  border-color: #5adbb5;
+  color: white;
 }
 
 .search-container {
@@ -119,6 +139,7 @@ nav li {
   bottom: 30px;
   left: 45px;
   margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 #bat-img,
@@ -131,6 +152,9 @@ nav li {
   margin: 90px;
   border: 2px 3px solid black;
   background-color: black;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-bottom: 100px;
 }
 
 #bat-img:hover,
@@ -138,9 +162,9 @@ nav li {
 #bat-img2:hover,
 #bat-img4:hover,
 #bat-img3:hover {
-  opacity: 0.8;
-  transition: 0.5s;
-  color: brown;
+opacity: 1;
+  transition: 0.3s;
+  color: rgb(132, 0, 0);
 
 }
 
@@ -178,4 +202,8 @@ nav li {
   color: blueviolet;
   text-decoration: underline purple;
   transition: 0.5s;
+}
+#eng-willow-p{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

@@ -27,52 +27,7 @@ nav a {
  nav {
    overflow: hidden;
  }
- .img-conatainer{
-   display: flex;
-   align-items: start;
-  justify-self: start;
-}
-.bat-pic{
-   margin-top: 34px;
-   height: 100%;
-}
-.p{
-   font-size: 25px;
-   font-weight: bold;
-   margin-top: 30px;
-   display: block;
-}
-.price{
-   margin-left: 10px;
-   margin-top: 50px;
-   font-size: 25px;
-   color: blue;
-   font-weight: bold;
- 
 
-}
-.btn{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.add-cart,.buy{
-   margin-right:5px;
-   height: 34px;
-   width: 90px;
-   font-size: 14px;
-   font-weight: bold;
-   background-color: rgb(105, 4, 4);
-   color: white;
-   border: 1px 10px solid rgb(241, 241, 249);
-   border-radius: 6px;
-}
-.add-cart:hover,.buy:hover{
-   opacity:0.7 transparent !important;
-   border-radius: 0;
-   transition: 0.5s;
-
-}
 #logo{
   display: flex;
   height:58px;
@@ -85,3 +40,39 @@ nav a {
   border-radius: 10px;
   transition: 0.4s;
 }
+.img-conatainer{
+   display: flex;
+   align-items: start;
+  justify-self: start;
+}
+.bat-pic{
+   margin-top: 34px;
+   height: 100%;
+}
+.bat-pic-Eng-Willow{
+   width: 20pc;
+   height: 20pc;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   position: relative;
+}
+.para,.bat-price{
+   position: relative;
+   margin-top: 100px;
+   margin-left: 40px;
+   font-style: italic;
+   font-size: 20px;
+}
+.bat-price{
+   margin-left: 700px;
+   margin-bottom: 200px;
+   margin-top: 50px;
+   font-size: 25px;
+   font-weight: bold;
+}
+.btn-container{
+   position: absolute;
+   left: 25pc;
+   bottom:9pc;
+}
+
