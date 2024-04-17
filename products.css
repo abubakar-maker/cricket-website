@@ -15,6 +15,14 @@
     left: 45px;
     margin-top: 20px;
   }
+  .para{
+    position: absolute;
+    bottom: 25pc;
+    left: 4pc;
+    font-style: bold;
+    font-size: 23px;
+
+  }
   
   #bat-img,#bat-img5,#bat-img2,#bat-img4,#bat-img3{
     height: 190px;

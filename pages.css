@@ -1,10 +1,10 @@
-*{
+* {
    padding: 0;
    margin: 0;
    font-family: "Fira Sans Condensed", sans-serif;
    font-weight: 600;
    font-style: normal;
-   
+
 }
 
 nav a {
@@ -16,53 +16,61 @@ nav a {
    text-decoration: none;
    font-size: 13px;
    color: black;
-  cursor: pointer;
- }
- 
- nav a:hover {
+   cursor: pointer;
+}
+
+nav a:hover {
    color: black;
    text-decoration: underline purple;
    transition: 0.5s;
- }
- nav {
-   overflow: hidden;
- }
+}
 
-#logo{
-  display: flex;
-  height:58px;
-  width:90px;
-  margin-left: 1px;
-  margin-top: 15px;
-  cursor: pointer;
+nav {
+   overflow: hidden;
 }
-.logo:hover{
-  border-radius: 10px;
-  transition: 0.4s;
+
+#logo {
+   display: flex;
+   height: 58px;
+   width: 90px;
+   margin-left: 1px;
+   margin-top: 15px;
+   cursor: pointer;
 }
-.img-conatainer{
+
+.logo:hover {
+   border-radius: 10px;
+   transition: 0.4s;
+}
+
+.img-conatainer {
    display: flex;
    align-items: start;
-  justify-self: start;
+   justify-self: start;
 }
-.bat-pic{
+
+.bat-pic {
    margin-top: 34px;
    height: 100%;
 }
-.bat-pic-Eng-Willow{
+
+.bat-pic-Eng-Willow {
    width: 20pc;
    height: 20pc;
    margin-top: 20px;
    margin-bottom: 10px;
    position: relative;
 }
-.para,.bat-price{
+
+.para,
+.bat-price {
    position: relative;
    margin-top: 100px;
    margin-left: 40px;
    font-style: italic;
    font-size: 20px;
 }
+
 .bat-price{
    margin-left: 700px;
    margin-bottom: 200px;
@@ -70,9 +78,10 @@ nav a {
    font-size: 25px;
    font-weight: bold;
 }
-.btn-container{
+
+
+.btn-container {
    position: absolute;
    left: 25pc;
-   bottom:9pc;
+   bottom: 9pc;
 }
-
