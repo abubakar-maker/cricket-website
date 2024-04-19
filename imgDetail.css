@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArbROHUC4dw5u6TZ7MQTNZfB8ORY6TNzxGq4cFN2Ziw&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#logo{
+    margin-bottom: 3pc;
+    position: relative;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
