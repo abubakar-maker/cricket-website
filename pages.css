@@ -1,87 +1,33 @@
-* {
-   padding: 0;
-   margin: 0;
-   font-family: "Fira Sans Condensed", sans-serif;
-   font-weight: 600;
-   font-style: normal;
-
+.contact{
+   display:inline;
+   align-items: center;
+   justify-content: center;
 }
-
-nav a {
-   float: left;
-   display: block;
-   color: white;
-   text-align: center;
-   padding: 14px 20px;
-   text-decoration: none;
-   font-size: 13px;
-   color: black;
-   cursor: pointer;
+.contact h3{
+   margin-left: 430px;
 }
-
-nav a:hover {
-   color: black;
-   text-decoration: underline purple;
-   transition: 0.5s;
+.insta-img-container{
+    display: inline;
 }
-
-nav {
-   overflow: hidden;
+.insta-img{
+    width: 2%;
+    height: 2%;
+    margin-left: 450px;
+    margin-top: 0;
 }
-
-#logo {
-   display: flex;
-   height: 58px;
-   width: 90px;
-   margin-left: 1px;
-   margin-top: 15px;
-   cursor: pointer;
+.insta-para{
+    font-size: 21px;
+    font-weight: bold;
+    display: inline;
+    text-decoration: none;
+    color: black ;
 }
-
-.logo:hover {
-   border-radius: 10px;
-   transition: 0.4s;
+.payment-img1,.payment-img2{
+    width: 2%;
+    height: 2%;
+    margin-top: 0pc;
+    display: inline;
 }
-
-.img-conatainer {
-   display: flex;
-   align-items: start;
-   justify-self: start;
-}
-
-.bat-pic {
-   margin-top: 34px;
-   height: 100%;
-}
-
-.bat-pic-Eng-Willow {
-   width: 20pc;
-   height: 20pc;
-   margin-top: 20px;
-   margin-bottom: 10px;
-   position: relative;
-}
-
-.para,
-.bat-price {
-   position: relative;
-   margin-top: 100px;
-   margin-left: 40px;
-   font-style: italic;
-   font-size: 20px;
-}
-
-.bat-price{
-   margin-left: 700px;
-   margin-bottom: 200px;
-   margin-top: 50px;
-   font-size: 25px;
-   font-weight: bold;
-}
-
-
-.btn-container {
-   position: absolute;
-   left: 25pc;
-   bottom: 9pc;
+.payment-img1,.payment-container h6{
+    margin-left: 450px;
 }

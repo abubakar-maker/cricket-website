@@ -10,6 +10,10 @@
     width: 180px;
     margin-top: 3pc;
 }
+#bat:hover{
+  border-radius: 15px;
+  transition: 0.5s;
+}
 .overlay{
   margin-bottom: 10pc;
     position: absolute;

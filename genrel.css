@@ -165,6 +165,7 @@ right: 20px;transition: top 0.3s ease;
 #bat-img2:hover,
 #bat-img4:hover,
 #bat-img3:hover {
+  border-radius: 13px;
 opacity: 1;
   transition: 0.3s;
   color: rgb(132, 0, 0);
