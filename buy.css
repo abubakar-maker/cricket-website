@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
 }
 
 .container {
@@ -10,6 +9,10 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#myForm{
+    margin-left: 42%;
+    margin-top: 2pc;
 }
 
 .form-group {
@@ -42,4 +45,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+#first-name,#last-name{
+    margin-top: 3pc;
 }
