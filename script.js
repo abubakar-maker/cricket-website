@@ -1,5 +1,8 @@
-
-
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById('searchBtn').addEventListener('click', function (event) {
+      event.preventDefault(); 
+  })
+})
 
  const logo = document.getElementById('logo');
  logo.addEventListener('click',()=>{
