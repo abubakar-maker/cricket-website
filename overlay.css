@@ -1,0 +1,61 @@
+.container{
+    position: relative;
+    width: 15%;
+    height: 13%;
+  cursor: pointer;
+  display: inline;
+}
+#bat{
+    height: 190px;
+    width: 180px;
+    margin-top: 3pc;
+}
+#bat:hover{
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.overlay{
+  margin-bottom: 10pc;
+    position: absolute;
+    top: 2pc;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #250548;
+    opacity: 0.6;
+    width: auto;
+    height: auto;
+    transform: scale(0);
+    transition: .3s ease;
+}
+.container:hover .overlay {
+    transform: scale(1);
+  }
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 150px;
+  }
+  .pp-contaner{
+    position: absolute;
+  }
+  .paragraph{
+    margin-top: 2pc;
+  }
+  .paragraph,._price{
+    position: relative;
+    color: black;
+    font-size: 23px;
+    font-style: bold;
+    font-family: system-ui,'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+  }
+ ._price{
+  margin-left: 200px;
+} 
+.btn-container{
+  margin-left: 20pc;
+}
