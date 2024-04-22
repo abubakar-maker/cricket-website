@@ -4,14 +4,15 @@ body {
 
 .container {
     max-width: 400px;
-    margin: 0  auto;
+    margin: 0 auto;
     margin-top: 0;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#myForm{
+
+#myForm {
     margin-left: 42%;
     margin-top: 2pc;
 }
@@ -26,7 +27,8 @@ label {
     font-weight: bold;
 }
 
-input[type="text"], input[type="tel"] {
+input[type="text"],
+input[type="tel"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -47,6 +49,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
-#first-name,#last-name{
+
+#first-name,
+#last-name {
     margin-top: 3pc;
 }

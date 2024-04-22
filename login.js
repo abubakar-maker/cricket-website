@@ -1,18 +1,4 @@
-
-// Function to attach Google Sign-In to button
-function attachSignin(element) {
-    auth2.attachClickHandler(element, {},
-        function (googleUser) {
-            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-            profile = googleUser.getBasicProfile();
-            idToken = googleUser.getAuthResponse().id_token;
-        },
-        function (resolve) {
-            console.resolve('resolve: ' + resolve);
-        });
-}
-// Login form
-document.getElementById('loginForm').addEventListener('sumbit', function (event) {
+document.getElementById('loginForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the form from submitting
     let username = document.getElementById('login-username').value.trim();
     let password = document.getElementById('login-password').value.trim();
@@ -23,11 +9,14 @@ document.getElementById('loginForm').addEventListener('sumbit', function (event)
         // Redirect to dashboard or home page
         window.location.href = 'index.html';
     } else {
-        alert('Invalid username or password.');
+        var loginPara = document.getElementById('login-paragrah');
+        loginPara.style.display = 'block';
+        loginPara.style.color = 'red';
+        loginPara.style.marginTop = '2px';
+        loginPara.style.fontSize = '10px';
+        loginPara.textContent = 'Please check Email and password';
     }
 });
-
-
 // Logout button
 
 document.getElementById('logout-btn').addEventListener('click', function (event) {

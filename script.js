@@ -68,7 +68,7 @@ page5.addEventListener('click',()=>{
     let isSignedIn = localStorage.getItem('username') !== null;
 
     // Get the image element
-    var profileImage = document.getElementById('sign-up');
+    var profileImage = document.getElementById('signupForm');
 
     if (isSignedIn) {
         // If user is signed in, change the image source to the user photo
