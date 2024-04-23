@@ -1,8 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById('searchBtn').addEventListener('click', function (event) {
-      event.preventDefault(); 
-  })
-})
+ alert("leave a comment")
+ 
+ document.addEventListener("DOMContentLoaded", function() {
+  // Create the navigation bar HTML
+  var navBarHTML = `
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+  `;
+  
+  // Find the location where you want to insert the navigation bar
+  var navBarLocation = document.getElementById("nav-bar");
+  
+  // Insert the navigation bar HTML into the designated location
+  if (navBarLocation) {
+      navBarLocation.innerHTML = product.html;
+  }
+});
+
 
  const logo = document.getElementById('logo');
  logo.addEventListener('click',()=>{
@@ -29,56 +48,7 @@ const page5 = document.getElementById('bat-img5');
 page5.addEventListener('click',()=>{
  window.location = 'page6.html'
 })
- const allProducts = document.getElementById('products');
-  allProducts.addEventListener('click',()=>{
-   window.location = 'produts.html'
-  })
-  const grade1Bats = document.getElementById('Grade');
-  grade1Bats .addEventListener('click',()=>{
-   window.location = 'grade.html'
-  })
-  const grade2Bats = document.getElementById('grade2');
-  grade2Bats .addEventListener('click',()=>{
-   window.location = 'grade2.html'
-  })
-  const bats = document.getElementById('mb-malik');
- bats .addEventListener('click',()=>{
-   window.location = 'mb-malik.html'
-  })
-  
-  const Willowbats = document.getElementById('Willow-bats');
-  Willowbats .addEventListener('click',()=>{
-   window.location = 'willow.html'
-  })
-  const kashmirbats = document.getElementById('kashmir');
-  kashmirbats .addEventListener('click',()=>{
-   window.location = 'willow.html'
-  })
-
-  const kits = document.getElementById('kits');
-  kits .addEventListener('click',()=>{
-   window.location = 'produts.html'
-  })
-  const sign = document.getElementById('sign-up');
-  sign .addEventListener('click',()=>{
-    window.location = 'signup.html'
-   })
-   document.addEventListener("DOMContentLoaded", function () {
-    // Check if user is signed in (You can define your own logic here)
-    let isSignedIn = localStorage.getItem('username') !== null;
-
-    // Get the image element
-    var profileImage = document.getElementById('signupForm');
-
-    if (isSignedIn) {
-        // If user is signed in, change the image source to the user photo
-        profileImage.src = "all products images/IMG-20240312-WA0072.jpg";
-        profileImage.style.height="7%";
-        profileImage.style.width="6%";
-        profileImage.style.borderRadius="26%";
-
-    } else {
-        // If user is not signed in, keep the default image or change it to a sign-in image
-        profileImage.src = 'sign-up-icon-signup-square-box-on-transparent-background-free-png.webp'
-    }
-});
+const allProducts = document.getElementById('products');
+allProducts.addEventListener('click',()=>{
+ window.location = 'produts.html'
+})
