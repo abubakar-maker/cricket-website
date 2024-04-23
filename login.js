@@ -26,5 +26,14 @@ document.getElementById('logout-btn').addEventListener('click', function (event)
     window.location.href = 'index.html';
 });
 
+function myFunction() {
+    var x = document.getElementById("login-password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
 
 

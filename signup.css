@@ -108,3 +108,7 @@ input[type="submit"]:hover {
 .login-p a{
     color: #0000FF;
 }
+#checkbox{
+margin-top: 10px;
+margin-left: 0;
+}

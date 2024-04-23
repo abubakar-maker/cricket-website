@@ -9,7 +9,8 @@ document.getElementById('signupForm').addEventListener('submit', function (event
             // Save user data in localStorage
             localStorage.setItem('username', username);
             localStorage.setItem('password', password);
-            alert('Signup successful');
+        
+           alert("you are sign up into the website")
             window.location = 'index.html';
         } else {
     var incorrect = document.getElementById('incorrect-para');
@@ -22,6 +23,14 @@ document.getElementById('signupForm').addEventListener('submit', function (event
     }
     }
 });
+function myFunction() {
+    var x = document.getElementById("signup-password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
 // Logout button
 
 document.getElementById('logout-btn').addEventListener('click', function (event) {
