@@ -181,7 +181,12 @@ opacity: 1;
   bottom: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.7;
+  margin-top: 10pc;
   left: 45px;
+}
+.bat-price:hover{
+  opacity: 1;
 }
 
 .about {
