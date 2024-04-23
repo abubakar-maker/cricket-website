@@ -1,59 +1,97 @@
-*{
- margin: 0;
- background-image: url(img/babar-azam-batting-form-cmdbrbm0kze7rb5m.jpg);
-    background-size: cover; /* Ensures the background image covers the entire viewport */
-    background-position: center; /* Centers the background image */
-    background-attachment: fixed; 
-    background-attachment: fixed;
-    font-weight: bold;
-  color: rgb(255, 255, 255);
-    background-color: none;
+* {
+  margin: 0;
+
+  font-weight: bold;
+  background-color: none;
+
+
 
 }
+#sign-link{
+  display: block;
+}
+
 nav {
   overflow: hidden;
-  
+  position: fixed;
+  top: 0;
+  display: inline;
+  margin-left: 3pc;
+  z-index: 999;
+
 }
 
 nav a {
   float: left;
-  display: block;
+  display: inline;
   color: hite;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
   font-size: 13px;
   color: black;
- cursor: pointer;
-}
-
-nav a:hover {
-  color: black;
-  text-decoration: underline purple;
-  transition: 0.5s;
-}
-nav li{
-  color: rgb(255, 255, 255);
-}
-
-#logo{
-  display: flex;
-  height:58px;
-  width:90px;
-  margin-left: 1px;
-  margin-top: 15px;
   cursor: pointer;
 }
-.logo:hover{
+
+nav a {
+  color: rgb(185, 170, 32);
+}
+
+
+nav a:hover {
+  color:#fff;
+  text-decoration: underline !important ;
+  transition: 0.5s;
+  background-color: #8cac5e;
+}
+
+
+#logo {
+  background-color: goldenrod;
+  color: blue;
+}
+
+#logo
+  { 
+  display: flex;
+  height: 58px;
+  width: 90px;
+  margin-left: 1px;
+  margin-top: 49px;
+max-width: fit-content;
+  cursor: pointer;
+
+
+}
+
+#sign-up {
+  margin-left: 1000px;
+border-color:#5adbb5;
+color: #5adbb5;
+font-style: italic;
+font-size: 19px;
+background-color: #fff;
+top: 10px; 
+right: 20px;transition: top 0.3s ease;
+
+}
+
+.logo:hover,
+#sign-up:hover  {
   border-radius: 10px;
   transition: 0.4s;
+  background-color: #5adbb5;
+  border-color: #5adbb5;
+  color: white;
 }
-.search-container{
+
+.search-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.search-bar{
+
+.search-bar {
   width: 220px;
   height: 40px;
   padding-left: 7px;
@@ -62,74 +100,98 @@ nav li{
   border-color: aliceblue;
   cursor: pointer;
 }
-.search-bar:hover{
- border-radius: 0px;
-transition: 0.5s;
+
+.search-bar:hover {
+  border-radius: 0px;
+  transition: 0.5s;
 }
-.magnifying-glass-solid{
+
+
+.magnifying-glass-solid {
   width: 25px;
   height: 30px;
   cursor: pointer;
   margin-left: 2px;
   margin-bottom: 2px;
 
+  
 }
 
-.container-img{
+
+.container-img {
   display: inline-flex;
-  flex-direction:row;
+  flex-direction: row;
   flex-wrap: wrap;
+  grid-template-columns: 1fr 60px;
   -ms-flex-item-align: center;
   align-items: center;
   justify-content: space-between;
   position: relative;
   border: 3px 3px solid black;
   cursor: pointer;
-  
+
 
 }
-.p{
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+.p {
   font-size: 21px;
   font-weight: bold;
   position: absolute;
   bottom: 30px;
   left: 45px;
   margin-top: 20px;
+  margin-bottom: 0px;
 }
 
-#bat-img,#bat-img5,#bat-img2,#bat-img4,#bat-img3{
+#bat-img,
+#bat-img5,
+#bat-img2,
+#bat-img4,
+#bat-img3 {
   height: 190px;
-  width:180px ;
+  width: 180px;
   margin: 90px;
   border: 2px 3px solid black;
   background-color: black;
-}
-#bat-img:hover,#bat-img5:hover,#bat-img2:hover,#bat-img4:hover,#bat-img3:hover{
+  cursor: pointer;
   opacity: 0.8;
-  transition: 0.5s;
-  color: brown;
-  
+  margin-bottom: 100px;
 }
-.bat-img:hover{
+
+#bat-img:hover,
+#bat-img5:hover,
+#bat-img2:hover,
+#bat-img4:hover,
+#bat-img3:hover {
+  border-radius: 13px;
+opacity: 1;
+  transition: 0.3s;
+  color: rgb(132, 0, 0);
+
+}
+
+.bat-img:hover {
   border-radius: 7px;
   transition-duration: 0.4s;
 }
 
-.bat-price{
+.bat-price {
   position: absolute;
   bottom: 13px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
- left: 45px;
-}
-.about{
-  background-color: rgb(245, 0, 0);
-margin-top: 10px;
-
+  left: 45px;
 }
 
-.about p,.about h2{
-  color:white;
+.about {
+  margin-top: 10px;
+  background-color: grey;
+}
+
+.about p,
+.about h2 {
+  color: white;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -137,8 +199,14 @@ margin-top: 10px;
   margin-bottom: 10px;
 
 }
-.about p:hover,.about h2:hover{
+
+.about p:hover,
+.about h2:hover {
   color: blueviolet;
   text-decoration: underline purple;
   transition: 0.5s;
+}
+#eng-willow-p{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
