@@ -179,9 +179,13 @@ opacity: 1;
 .bat-price {
   position: absolute;
   bottom: 13px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   left: 45px;
+  opacity : 0.7;
+}
+.bat-price:hover{
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .about {
@@ -209,4 +213,12 @@ opacity: 1;
 #eng-willow-p{
   margin-top: 10px;
   margin-bottom: 10px;
+}
+._price{
+  opacity: 0.7;
+  font-size: 18px;
+}
+._price:hover{
+  opacity: 1;
+  transition: 0.5s;
 }
